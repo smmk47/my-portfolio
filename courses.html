@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website - Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li>
+                <button id="theme-toggle">🌙</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="courses">
+            <h1>Courses</h1>
+
+            <div class="filters">
+                <div class="filter">
+                    <label for="faculty-filter">Filter by Semester:</label>
+                    <select id="faculty-filter" onchange="location = this.value;">
+                        <option value="all">All</option>
+                        <option value="#semester1">Semester 1</option>
+                        <option value="#semester2">Semester 2</option>
+                        <option value="#semester3">Semester 3</option>
+                        <option value="#semester4">Semester 4</option>
+                        <option value="#semester5">Semester 5</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <label for="subject-filter">Filter by Major:</label>
+                    <select id="subject-filter" onchange="location = this.value;">
+                        <option value="all">All</option>
+                        <option value="#cs">Computer Science</option>
+                        <option value="#se">Software Engineering</option>
+                        <option value="#ds">Data Science</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="course-list">
+                <h2 id="semester1">Semester 1</h2>
+                <ul id="courses">
+                    <li class="course-item" data-faculty="Dr. John Doe" data-subject="Computer Science">
+                        <strong>CS1002:</strong> Programming Fundamentals - Introduction to the basics of programming, including variables, control structures, data types, and problem-solving techniques.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. Jane Smith" data-subject="Software Engineering">
+                        <strong>CS1004:</strong> Object Oriented Programming - Focuses on the principles of object-oriented programming, including classes, objects, inheritance, and polymorphism.
+                    </li>
+                </ul>
+
+                <h2 id="semester2">Semester 2</h2>
+                <ul id="courses">
+                    <li class="course-item" data-faculty="Dr. Emily Johnson" data-subject="Computer Science">
+                        <strong>CS1005:</strong> Discrete Structures - Covers mathematical structures that are fundamentally discrete rather than continuous, including sets, relations, graphs, and combinatorics.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. John Doe" data-subject="Computer Science">
+                        <strong>CS2001:</strong> Data Structures - Introduction to data structures such as arrays, linked lists, stacks, queues, trees, and graphs, emphasizing their implementation and application.
+                    </li>
+                </ul>
+
+                <h2 id="semester3">Semester 3</h2>
+                <ul id="courses">
+                    <li class="course-item" data-faculty="Dr. Jane Smith" data-subject="Software Engineering">
+                        <strong>CS2005:</strong> Database Systems - Explores database design, modeling, normalization, and SQL for managing data effectively in various database systems.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. Emily Johnson" data-subject="Computer Science">
+                        <strong>CS2006:</strong> Operating Systems - Covers the principles of operating systems, including process management, memory management, file systems, and system calls.
+                    </li>
+                </ul>
+
+                <h2 id="semester4">Semester 4</h2>
+                <ul id="courses">
+                    <li class="course-item" data-faculty="Dr. John Doe" data-subject="Computer Science">
+                        <strong>CS2009:</strong> Design and Analysis of Algorithms - Focuses on algorithm design techniques, analysis of algorithm efficiency, and complexity theory.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. Jane Smith" data-subject="Computer Science">
+                        <strong>CS3001:</strong> Computer Networks - Introduction to computer networking concepts, including network architecture, protocols, and data communication.
+                    </li>
+                </ul>
+
+                <h2 id="semester5">Semester 5</h2>
+                <ul id="courses">
+                    <li class="course-item" data-faculty="Dr. Emily Johnson" data-subject="Software Engineering">
+                        <strong>CS3004:</strong> Software Design and Analysis - Covers software design methodologies, software development life cycle, and techniques for analyzing software requirements.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. John Doe" data-subject="Computer Science">
+                        <strong>CS3005:</strong> Theory of Automata - Explores formal languages, automata theory, and computability, including finite automata and Turing machines.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. Jane Smith" data-subject="Computer Science">
+                        <strong>CS3006:</strong> Parallel and Distributed Computing - Covers concepts and techniques for designing and implementing parallel and distributed systems.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. Emily Johnson" data-subject="Software Engineering">
+                        <strong>CS3009:</strong> Software Engineering - Focuses on software development processes, methodologies, project management, and quality assurance.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. John Doe" data-subject="Software Engineering">
+                        <strong>CS4039:</strong> Software for Mobile Devices - Covers the design and development of software applications for mobile devices, including user interface design and mobile operating systems.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. Jane Smith" data-subject="Computer Science">
+                        <strong>CS3002:</strong> Information Security - Explores principles of information security, including cryptography, network security, and risk management.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. Emily Johnson" data-subject="Professional Practices in IT">
+                        <strong>CS4001:</strong> Professional Practices in IT - Focuses on professional ethics, standards, and practices in the IT industry, including project management and teamwork.
+                    </li>
+                    <li class="course-item" data-faculty="Dr. John Doe" data-subject="Web Programming">
+                        <strong>CS4032:</strong> Web Programming - Covers web development technologies, including HTML, CSS, JavaScript, and server-side programming.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Murtaza Kazmi. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
